@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0a08">
+<title>蟑蟑生日演唱會｜官方售票</title>
+<style>
+:root{--bg:#090908;--panel:#14120e;--gold:#d6b56b;--gold2:#f0d99a;--muted:#a69a80;--line:#594727;--white:#f7f2e7}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#342716 0%,#11100d 38%,#080807 75%);color:var(--white);font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;min-height:100vh}
+.wrap{width:min(920px,calc(100% - 28px));margin:auto;padding:26px 0 56px}
+header{text-align:center;padding:28px 12px 22px;border:1px solid var(--line);background:linear-gradient(145deg,#17130d,#090908 70%);border-radius:22px;box-shadow:0 18px 60px #0008;position:relative;overflow:hidden}
+header:before,header:after{content:"✦";position:absolute;color:#9e7c3b;font-size:26px;opacity:.65}header:before{top:20px;left:24px}header:after{bottom:18px;right:24px}
+.eyebrow{letter-spacing:.28em;color:var(--gold);font-size:11px;font-weight:800}
+h1{font-size:clamp(34px,8vw,64px);line-height:1.12;margin:15px 0 8px;color:var(--gold2);text-shadow:0 0 28px #b78b3b44}
+.en{letter-spacing:.22em;color:#c9b88f;font-size:12px}.date{font-size:clamp(28px,6vw,42px);font-weight:900;letter-spacing:.12em;margin:20px 0 4px;color:var(--gold)}
+.sub{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:18px;padding:20px;background:linear-gradient(145deg,#19160f,#100f0c)}
+.card h2{font-size:17px;color:var(--gold2);margin:0 0 14px}
+.price{font-size:32px;font-weight:900;color:var(--gold2)}.old{color:#92866e;text-decoration:line-through;font-size:14px}
+.pill{display:inline-block;border:1px solid #806536;color:var(--gold2);border-radius:999px;padding:5px 10px;font-size:12px}
+.stats{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #40351f;margin-top:15px;padding-top:13px;color:#c8b995;font-size:13px}
+label{display:block;color:#d9c99f;font-size:13px;margin:13px 0 7px}
+input,select{width:100%;border:1px solid #66532f;background:#090908;color:white;border-radius:10px;padding:13px;font-size:16px;outline:none}
+input:focus,select:focus{border-color:var(--gold2);box-shadow:0 0 0 3px #d6b56b22}
+button{border:0;border-radius:11px;padding:14px 18px;font-size:15px;font-weight:850;cursor:pointer}
+.primary{width:100%;margin-top:17px;background:linear-gradient(100deg,#9f7936,#f0d99a,#b58a42);color:#171108}
+.secondary{background:#282116;color:var(--gold2);border:1px solid var(--line)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.note{font-size:12px;line-height:1.7;color:#b5a98f}
+.notice{border:1px solid #806536;background:#1b160d;border-radius:12px;padding:12px 14px;color:#e4d3a7;font-size:12px;line-height:1.65;margin-top:14px}
+#ticket{display:none;margin-top:16px;border:1px solid var(--gold);border-radius:18px;padding:20px;background:linear-gradient(145deg,#1b170e,#090908)}
+.ticketTop{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px dashed #806536;padding-bottom:12px}
+.ticketName{font-size:23px;color:var(--gold2);font-weight:900}
+.ticketBody{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding-top:14px}
+#qr{background:white;padding:9px;border-radius:8px;min-width:116px;min-height:116px;display:flex;align-items:center;justify-content:center}
+#qr img{max-width:116px}
+.code{font-size:20px;letter-spacing:.08em;color:var(--gold2);font-weight:900;word-break:break-all}
+footer{text-align:center;color:#82765d;font-size:11px;margin-top:22px;line-height:1.8}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.ticketBody{grid-template-columns:1fr}.ticketBody #qr{justify-self:start}}
+@media print{body{background:#fff;color:#111}.wrap>*:not(#ticket){display:none!important}#ticket{display:block!important;background:#fff;color:#111;border:2px solid #9b783c}.ticketName,.code{color:#5d4318}.note{color:#333}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow">COCKROACH BOYS · OFFICIAL TICKET OFFICE</div>
+  <h1>蟑蟑生日演唱會</h1>
+  <div class="en">BIRTHDAY LIVE CONCERT</div>
+  <div class="date">11.09 · 2026</div>
+  <div class="sub">團長暨主唱：蟑蟑　｜　演出地點：學校</div>
+</header>
+
+<div class="grid">
+  <section class="card">
+    <h2>線上預訂優惠</h2>
+    <div class="pill">ONLINE SPECIAL</div>
+    <div class="price">NT$1,500</div>
+    <div class="old">現場購票 NT$2,000</div>
+    <div class="stats"><span>每張現省 NT$500</span><span>限量 15 張</span></div>
+  </section>
+  <section class="card">
+    <h2>購票須知</h2>
+    <p class="note">・線上只接受預訂，不會在線上收款。<br>・請在學校向主辦方以現金付款。<br>・每筆預訂最多 2 張。<br>・未付款預訂保留至 11 月 9 日當天；逾期由主辦方確認後釋出。<br>・請保存電子票，付款後由主辦方確認票券。</p>
+  </section>
+</div>
+
+<section class="card">
+  <h2>線上預訂門票</h2>
+  <form id="booking">
+    <label for="nickname">購票暱稱</label>
+    <input id="nickname" maxlength="20" required placeholder="輸入暱稱即可，請勿填寫敏感個資">
+    <label for="quantity">購票張數（每筆最多 2 張）</label>
+    <select id="quantity"><option value="1">1 張｜NT$1,500</option><option value="2">2 張｜NT$3,000</option></select>
+    <button class="primary" id="submit" type="submit">確認預訂</button>
+  </form>
+  <div class="notice">重要：這是網站展示／測試版。預訂紀錄目前只保存在這台裝置的瀏覽器，尚未連接多人共用的售票資料庫，因此「剩餘票數」不代表全校即時庫存。正式公開售票前，必須先接上可供主辦方管理的共享資料庫，避免超賣。</div>
+  <div class="note" style="margin-top:12px">本機測試預訂數：<strong id="localCount">0</strong> / 15 張（只計算目前這台裝置）</div>
+</section>
+
+<section id="ticket" aria-live="polite">
+  <div class="ticketTop"><div><div class="eyebrow">YOUR E-TICKET</div><div class="ticketName">蟑蟑生日演唱會</div></div><span class="pill">預訂票</span></div>
+  <div class="ticketBody">
+    <div>
+      <div class="note">持票人暱稱</div><div id="ticketNick" style="font-weight:800;margin-bottom:12px"></div>
+      <div class="note">預訂編號</div><div class="code" id="ticketCode"></div>
+      <div class="note" style="margin-top:12px">日期：2026 年 11 月 9 日<br>地點：學校<br>張數：<span id="ticketQty"></span> 張<br>金額：<span id="ticketTotal"></span><br>付款狀態：尚未付款（請至學校付現）</div>
+    </div>
+    <div id="qr"><span style="color:#333;font-size:11px">QR Code 載入中</span></div>
+  </div>
+  <p class="note">請截圖保存此票。QR Code 僅供辨識預訂編號；付款與入場資格仍須由主辦方現場確認。</p>
+  <button class="secondary" onclick="window.print()">列印／另存電子票</button>
+</section>
+
+<footer>COCKROACH BOYS · TICKET OFFICE<br>限時活動網站｜活動結束後由主辦方下架</footer>
+</div>
+<script>
+const KEY='cockroach_birthday_local_bookings_v1';
+function bookings(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return []}}
+function updateCount(){const n=bookings().reduce((s,b)=>s+b.qty,0);document.getElementById('localCount').textContent=n;document.getElementById('submit').disabled=n>=15; if(n>=15)document.getElementById('submit').textContent='本機測試名額已滿';}
+function makeCode(){return 'CJ'+Math.random().toString(36).slice(2,8).toUpperCase();}
+document.getElementById('booking').addEventListener('submit',function(e){
+ e.preventDefault();
+ const nick=document.getElementById('nickname').value.trim(),qty=Number(document.getElementById('quantity').value);
+ if(!nick){alert('請輸入暱稱');return;}
+ const list=bookings(),used=list.reduce((s,b)=>s+b.qty,0);
+ if(used+qty>15){alert('目前這台裝置的測試名額不足。');return;}
+ const code=makeCode(),item={nick,qty,code,createdAt:new Date().toISOString(),paid:false};
+ list.push(item);localStorage.setItem(KEY,JSON.stringify(list));
+ document.getElementById('ticketNick').textContent=nick;
+ document.getElementById('ticketCode').textContent=code;
+ document.getElementById('ticketQty').textContent=qty;
+ document.getElementById('ticketTotal').textContent='NT$'+(qty*1500).toLocaleString('en-US');
+ const qr=document.getElementById('qr');qr.innerHTML='';
+ const payload=encodeURIComponent('蟑蟑生日演唱會|'+code+'|'+nick+'|'+qty+'張');
+ const img=document.createElement('img');img.alt='預訂票 QR Code';img.src='https://api.qrserver.com/v1/create-qr-code/?size=140x140&data='+payload;img.onerror=()=>{qr.textContent=code;qr.style.color='#111';};qr.appendChild(img);
+ document.getElementById('ticket').style.display='block';updateCount();document.getElementById('ticket').scrollIntoView({behavior:'smooth'});
+});
+updateCount();
+</script>
+</body>
+</html>
